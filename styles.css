@@ -1,0 +1,54 @@
+
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(109, 11, 11); /* Sets text color*/
+    background-color: rgb(255, 255, 255); /* Sets background color */
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    justify-content: center;
+        /* Create the blur effect at the top and bottom */
+    mask-image: linear-gradient(to bottom, 
+        transparent, 
+        black 10%, 
+        black 90%, 
+        transparent);
+
+}
+
+h1, h2 {
+    font-weight: normal; /* h1 elements are automatically bold, so we undo that here */
+    text-align: center;
+}
+
+h1 {
+    padding-top: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+img{
+    width: 400px;
+    height: auto;s
+
+}
+
+video {
+    width: 600px; 
+    height: auto;  
+}
+
+#lastParagraph {
+    position: fixed;
+    bottom: 30px;
+    text-align: center;
+    left: 50%;                  /* Move to the middle of the screen */
+    transform: translateX(-50%); /* Center it horizontally last paragraph overrides all other rules*/
+}
+
